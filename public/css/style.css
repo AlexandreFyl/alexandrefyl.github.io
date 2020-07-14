@@ -147,7 +147,7 @@ button {
   height: 450px;
   margin: 25px;
   padding: 25px;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px #EDEDED;
   font-size: 2rem;
   line-height: 2em;
   display: flex;
