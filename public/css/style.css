@@ -1,0 +1,512 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: white;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #579c87;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+.header__logo {
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__nav a {
+  font-family: "Montserrat", sans-serif;
+}
+
+.list__card p {
+  font-size: 5rem;
+}
+.list__card h2 {
+  font-size: 3rem;
+}
+.list__card--note {
+  font-family: "Devonshire", cursive;
+  font-weight: lighter;
+}
+.list__card--note p {
+  font-size: 4rem;
+  font-family: "Itim", cursive;
+  font-style: italic;
+}
+.list__card--note h2 {
+  font-size: 3rem;
+  color: black;
+}
+.list__card--french {
+  font-family: "DM Serif Text", serif;
+  font-size: 4rem;
+}
+.list__card--french p {
+  font-size: 4rem;
+}
+.list__card--french h2 {
+  font-size: 2rem;
+}
+.list__card--delice {
+  font-family: "Dancing Script", cursive;
+}
+.list__card--delice p {
+  font-size: 4rem;
+  font-family: "Itim", cursive;
+  font-style: italic;
+}
+.list__card--delice h2 {
+  font-size: 3rem;
+}
+.list__card--palette {
+  font-family: "Kaushan Script", cursive;
+}
+.list__card--palette p {
+  font-size: 4rem;
+  font-family: "Itim", cursive;
+  font-style: italic;
+}
+.list__card--palette h2 {
+  font-size: 3rem;
+}
+
+/*.btn {
+    @include btn
+}*/
+.header {
+  background: #579c87;
+  height: 10rem;
+  width: 100%;
+}
+.header__logo {
+  font-size: 6rem;
+  color: #fdcb46;
+  text-align: center;
+  letter-spacing: -0.1em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  background: #579c87;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  width: 40%;
+  display: flex;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.list__card {
+  width: 300px;
+  height: 450px;
+  margin: 25px;
+  padding: 25px;
+  box-shadow: 0px 0px 10px grey;
+  font-size: 2rem;
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* necessaire pour hover */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.list__card--note {
+  background: #FCDFDB;
+  color: black;
+}
+.list__card--note .fas {
+  font-size: 5rem;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list__card--french {
+  background: #FFF5FE;
+}
+.list__card--french h2 {
+  background-image: linear-gradient(0.15turn, #C77412, #915CFB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list__card--french p {
+  color: #C77412;
+}
+.list__card--delice {
+  background: #F9F9F9;
+}
+.list__card--delice h2 {
+  background-image: linear-gradient(-0.15turn, #0987FB, #0431DF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list__card--delice p {
+  color: #0987FB;
+}
+.list__card--palette {
+  background: #FDFFFD;
+}
+.list__card--palette h2 {
+  background-image: linear-gradient(-0.15turn, #BFFF7E, #42973C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list__card--palette p {
+  color: #42973C;
+}
+.list__card:hover {
+  opacity: 0.5;
+}
+.list a {
+  text-decoration: none;
+}
+.list a:hover {
+  zoom: 120%;
+}
+
+.wip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wip__btn {
+  display: flex;
+  text-align: center;
+  width: 20%;
+  height: 70px;
+  border-radius: 10px;
+  background: #579c87;
+  color: #fdcb46;
+  align-items: center;
+  justify-content: center;
+}
+.wip__btn-police {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: 0.2;
+  }
+}
+.wip__btn-police span {
+  /* taille police */
+  font-size: 3em;
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+.wip__btn-police span:nth-child(2) {
+  /* taille police */
+  font-size: 3em;
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.2s;
+}
+
+.wip__btn-police span:nth-child(3) {
+  /* taille police */
+  font-size: 3em;
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.4s;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: #fdcb46;
+  font-size: 3rem;
+}
+.footer__nav a:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.container-menu {
+  width: 70%;
+  margin: auto;
+  padding: 2%;
+}
+.container-menu h2, .container-menu h3, .container-menu p {
+  text-align: center;
+}
+.container-menu h2 {
+  font-size: 5rem;
+}
+.container-menu p {
+  font-size: 1.5em;
+}
+.container-menu__footer {
+  padding-top: 25px;
+  font-family: "Devonshire", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #3D1319;
+}
+.container-menu--1 {
+  background-color: #FCDFDB;
+}
+.container-menu--1 h2 {
+  font-family: "Devonshire", cursive;
+  font-weight: 300;
+  color: #3D1319;
+  font-size: 3em;
+}
+.container-menu--1 h3, .container-menu--1 p {
+  color: #3D1319;
+  font-family: "Sriracha", cursive;
+}
+.container-menu--1 p {
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+.container-menu--1 .fas {
+  font-size: 7rem;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+}
+.container-menu--2 {
+  background-color: #FFF5FE;
+  font-family: "DM Serif Text", serif;
+  font-weight: lighter;
+}
+.container-menu--2 h2 {
+  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-menu--3 {
+  background-color: #EDEFEF;
+}
+.container-menu--3 h2 {
+  font-size: 8rem;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right, #229df9, #0431df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-menu--3 h3, .container-menu--3 p {
+  font-family: "Sriracha", cursive;
+  font-weight: 300;
+  color: black;
+}
+.container-menu--4 {
+  background-color: #FDFFFD;
+}
+.container-menu--4 h2 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to right, #beff7f, #3d923a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-menu--4 h3, .container-menu--4 p {
+  color: black;
+  font-family: "Sriracha", cursive;
+  font-weight: 300;
+}
+
+.h1Menu {
+  text-align: center;
+  color: #696969;
+  font-size: 3rem;
+  padding-top: 2%;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.titles__img {
+  width: 20em;
+  height: 2.5em;
+}
+.titles__txt {
+  font-size: 2em;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+.titles__txt:hover:after {
+  width: 100%;
+  right: 0;
+}
+.titles__txt:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  right: 0;
+  position: absolute;
+  background: black;
+  transition: width 1s ease 0s, right 0.5s ease 0s;
+  width: 0;
+}
+
+.liste-plats {
+  width: 95%;
+  margin: auto;
+}
+.liste-plats p {
+  text-align: left;
+}
+.liste-plats__desc {
+  float: left;
+}
+.liste-plats__price {
+  float: right;
+}
+
+.color1 {
+  color: #C67412 !important;
+}
+
+.color2 {
+  color: #A56799 !important;
+}
+
+.color3 {
+  color: #6E4CCC !important;
+}
+
+/*# sourceMappingURL=style.css.map */

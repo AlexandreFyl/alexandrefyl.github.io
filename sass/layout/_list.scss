@@ -1,0 +1,79 @@
+.list {
+    width:40%;
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    &__card {
+        width: 300px;
+        height: 450px;
+        margin: 25px;
+        padding: 25px;
+        box-shadow: 0px 0px 10px grey;
+        font-size:2rem;
+        line-height: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* necessaire pour hover */
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        &--note {
+            background:#FCDFDB;
+            color:black;
+            .fas {
+                font-size: 5rem;
+                background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &--french {
+            background: #FFF5FE;
+            h2 {
+                background-image: linear-gradient(0.15turn, #C77412, #915CFB);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+            }
+            p {
+                color: #C77412;
+            }
+            
+        }
+        &--delice {
+            background: #F9F9F9;
+            h2 {
+                background-image: linear-gradient(-0.15turn, #0987FB, #0431DF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;  
+            }
+            p {
+                color: #0987FB;
+            }
+        }
+        &--palette {
+            background: #FDFFFD;
+            h2 {
+                background-image: linear-gradient(-0.15turn, #BFFF7E, #42973C);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;  
+            }
+            p {
+                color: #42973C;
+            }
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            zoom: 120%;
+        }
+    }
+}

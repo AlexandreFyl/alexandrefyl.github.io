@@ -1,0 +1,160 @@
+.container-menu {
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+    h2, h3, p {
+        text-align:  center;
+    }
+    h2 {
+        font-size: 5rem;
+
+    }
+    p {
+        font-size: 1.5em;
+    }
+    &__footer {
+        padding-top: 25px;
+        font-family: 'Devonshire', cursive;
+        font-size: 2.5em;
+        text-align: center;
+        color: #3D1319;
+    }
+    &--1 {
+        background-color: #FCDFDB;
+        h2 {
+            font-family: 'Devonshire', cursive;
+            font-weight: 300;
+            color:#3D1319;
+            font-size: 3em;
+        }
+        h3, p {
+            color:#3D1319;
+            font-family: 'Sriracha', cursive;
+        }
+        p {
+            font-weight: lighter;
+            font-size: 2.5rem;
+        }
+       
+        .fas {
+            font-size: 7rem;
+            background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: auto;
+        }
+    }
+    &--2 {
+        background-color: #FFF5FE;
+        font-family: 'DM Serif Text', serif;
+        font-weight: lighter;
+        h2 {
+            background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            
+        }
+        
+    }
+    &--3 {
+        background-color: #EDEFEF;
+        h2 {
+            font-size: 8rem;
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(to right, #229df9, #0431df);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3, p {
+            font-family: 'Sriracha', cursive;
+            font-weight: 300;
+            color:black;
+        }
+    }
+    &--4 {
+        background-color: #FDFFFD;
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            background: linear-gradient(to right, #beff7f, #3d923a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3, p {
+            color:black;
+            font-family: 'Sriracha', cursive;
+            font-weight: 300;
+        }
+    }
+}
+
+.h1Menu {
+    text-align: center;
+    color: #696969;
+    font-size: 3rem;
+    padding-top: 2%;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    &__img {
+        width: 20em;
+        height: 2.5em;
+    }
+    &__txt {
+        font-size: 2em;
+
+        display: inline-block;
+        padding: 15px; 
+        position: relative;
+        &:hover:after {
+            width:100%;
+            right: 0;
+        }
+        &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            right: 0;
+            position: absolute;
+            background: black;
+            transition: width 1s ease 0s, right 0.5s ease 0s;
+            width: 0;
+        }
+    }
+}
+
+.liste-plats {
+    width: 95%;
+    margin: auto;
+    p {
+        text-align: left;
+    }
+    &__desc {
+        float: left;
+    }
+    &__price {
+        float: right;
+    }
+}
+
+.color1 {
+    color:#C67412 !important;
+}
+.color2 {
+    color: #A56799 !important;
+}
+.color3 {
+    color: #6E4CCC !important;
+}
+   
+   
+   
+   

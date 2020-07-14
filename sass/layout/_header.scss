@@ -1,0 +1,11 @@
+.header {
+    background: $colour-primary;
+    height: 10rem;
+    width: 100%;   
+    &__logo {
+        font-size: 6rem;
+        color: $colour-secondary;
+        text-align: center;
+        letter-spacing: -0.1em;
+    }
+}

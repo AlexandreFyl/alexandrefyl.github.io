@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $colour-primary;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
+
+.header {
+    &__logo {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.footer {
+    &__nav a {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.list__card {
+    p {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    &--note {
+        font-family: 'Devonshire', cursive;
+        font-weight: lighter;
+        p {
+            font-size: 4rem;
+            font-family: 'Itim', cursive;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 3rem;
+            color: black;
+            
+        }
+    }
+    &--french {
+        font-family: 'DM Serif Text', serif;
+        font-size: 4rem;
+        p {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 2rem;
+            
+        }
+    }
+    &--delice {
+        font-family: 'Dancing Script', cursive;
+        p {
+            font-size: 4rem;
+            font-family: 'Itim', cursive;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 3rem;
+            
+        }
+    }
+    &--palette {
+        p {
+            font-size: 4rem;
+            font-family: 'Itim', cursive;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 3rem;
+            
+        }
+        font-family: 'Kaushan Script', cursive;
+    }
+}
