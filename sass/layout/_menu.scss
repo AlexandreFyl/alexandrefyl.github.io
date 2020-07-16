@@ -107,7 +107,6 @@
         max-width: 100%;
         height: auto;
         width: 20em;
-        height: 2.5em;
     }
     &__txt {
         font-size: 2em;
@@ -158,6 +157,45 @@
     color: #6E4CCC !important;
 }
    
-   
+@media (max-width: 575.98px) {
+    .titles {
+        &__img {
+            width: 4em;
+        }
+        &__txt {
+            font-size: 1em;
+        }
+    }
+    .container-menu {
+        width: 90%;
+        h2 {
+            font-size: 3rem;
+    
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 769px) {
+    .titles {
+        &__img {
+            width: 6em;
+        }
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+@media (max-width: 1199.98px) {
+    .titles {
+        &__img {
+            width: 8em;
+        }
+    }
+ }
    
    
