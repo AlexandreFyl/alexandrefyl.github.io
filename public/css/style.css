@@ -214,15 +214,36 @@ button {
   zoom: 120%;
 }
 
+@media (max-width: 991.98px) {
+  .list {
+    flex-direction: column;
+    width: 70%;
+  }
+  .list__card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .list {
+    width: 100%;
+  }
+  .list__card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .wip {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .wip__btn {
   display: flex;
   text-align: center;
-  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 70px;
   border-radius: 10px;
   background: #579c87;
@@ -259,8 +280,6 @@ button {
   }
 }
 .wip__btn-police span {
-  /* taille police */
-  font-size: 3em;
   /**
    * Use the blink animation, which is defined above
    */
@@ -284,8 +303,6 @@ button {
 }
 
 .wip__btn-police span:nth-child(2) {
-  /* taille police */
-  font-size: 3em;
   /**
    * Starts the animation of the third dot
    * with a delay of .2s, otherwise all dots
@@ -295,8 +312,6 @@ button {
 }
 
 .wip__btn-police span:nth-child(3) {
-  /* taille police */
-  font-size: 3em;
   /**
    * Starts the animation of the third dot
    * with a delay of .4s, otherwise all dots
@@ -355,6 +370,14 @@ button {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@media (max-width: 575.98px) {
+  .footer__nav {
+    width: 95%;
+  }
+  .footer__nav a {
+    font-size: 2rem;
   }
 }
 .container-menu {
@@ -455,8 +478,11 @@ button {
   align-items: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  max-width: 100%;
 }
 .titles__img {
+  max-width: 100%;
+  height: auto;
   width: 20em;
   height: 2.5em;
 }
@@ -507,6 +533,19 @@ button {
 
 .color3 {
   color: #6E4CCC !important;
+}
+
+.legalBlock {
+  width: 60%;
+  margin: auto;
+}
+.legalBlock h1, .legalBlock h2 {
+  color: #fdcb46;
+}
+.legalBlock p {
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

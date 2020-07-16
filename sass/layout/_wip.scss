@@ -1,11 +1,11 @@
 .wip {
     display: flex;
     justify-content: center;
-    align-items: center;
     &__btn {
         display: flex;
         text-align: center;
-        width:20%;
+        padding-left: 15px;
+        padding-right: 15px;
         height: 70px;
         border-radius: 10px;
         background: $colour-primary;
@@ -45,9 +45,6 @@
 
 .wip__btn-police span {
 
-  /* taille police */
-  
-  font-size: 3em;
 
   /**
    * Use the blink animation, which is defined above
@@ -73,9 +70,7 @@
 
 .wip__btn-police span:nth-child(2) {
 
-    /* taille police */
 
-    font-size: 3em;
   /**
    * Starts the animation of the third dot
    * with a delay of .2s, otherwise all dots
@@ -86,10 +81,6 @@
 
 .wip__btn-police span:nth-child(3) {
 
-
-    /* taille police */
-
-    font-size: 3em;
   /**
    * Starts the animation of the third dot
    * with a delay of .4s, otherwise all dots
@@ -97,3 +88,4 @@
    */
   animation-delay: .4s;
 }
+

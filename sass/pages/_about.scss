@@ -1,0 +1,13 @@
+.legalBlock {
+    width: 60%;
+    margin: auto;
+    h1, h2 {
+        color :$colour-secondary;
+    }
+    p {
+        color: black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}
