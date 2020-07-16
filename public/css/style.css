@@ -534,6 +534,16 @@ button {
   color: #6E4CCC !important;
 }
 
+@media (max-width: 1199.98px) {
+  .titles__img {
+    width: 8em;
+  }
+}
+@media (max-width: 769px) {
+  .titles__img {
+    width: 6em;
+  }
+}
 @media (max-width: 575.98px) {
   .titles__img {
     width: 4em;
@@ -550,16 +560,6 @@ button {
   }
   .container-menu p {
     font-size: 1em;
-  }
-}
-@media (max-width: 769px) {
-  .titles__img {
-    width: 6em;
-  }
-}
-@media (max-width: 1199.98px) {
-  .titles__img {
-    width: 8em;
   }
 }
 .legalBlock {

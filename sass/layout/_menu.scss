@@ -157,7 +157,26 @@
     color: #6E4CCC !important;
 }
    
-@media (max-width: 575.98px) {
+
+@media (max-width: 1199.98px) {
+    .titles {
+        &__img {
+            width: 8em;
+        }
+    }
+ }
+ // Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 769px) {
+    .titles {
+        &__img {
+            width: 6em;
+        }
+    }
+ }
+ @media (max-width: 575.98px) {
     .titles {
         &__img {
             width: 4em;
@@ -178,24 +197,6 @@
     }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 769px) {
-    .titles {
-        &__img {
-            width: 6em;
-        }
-    }
- }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {  }
-
-@media (max-width: 1199.98px) {
-    .titles {
-        &__img {
-            width: 8em;
-        }
-    }
- }
    
    
